@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_shape"
+    android:orientation="vertical">
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="5dp"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/delete_indicator_shape"/>
+
+    <TextView
+        android:id="@+id/textViewBottomDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are You Sure \nYou Want To Delete All Notes"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/yesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yes_button_shape"
+        android:text="Yes"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/noButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/no_button_shape"
+        android:text="No"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:padding="7dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

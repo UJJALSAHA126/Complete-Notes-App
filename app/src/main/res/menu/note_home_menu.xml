@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/search_note"
+        android:title="Search"
+        android:icon="@drawable/ic_baseline_search"
+        android:iconTint="@color/white"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/deleteAll_note"
+        android:title="Delete All"
+        android:icon="@drawable/ic_baseline_delete_forever_24"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+</menu>

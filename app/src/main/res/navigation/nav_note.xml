@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_note"
+    app:startDestination="@id/homeNotesFragment">
+
+    <fragment
+        android:id="@+id/homeNotesFragment"
+        android:name="com.example.completenotes.fragments.homenotes.HomeNotesFragment"
+        android:label="All Notes"
+        tools:layout="@layout/fragment_home_notes" >
+        <action
+            android:id="@+id/action_homeNotes_to_addNotes"
+            app:destination="@id/addNotesFragment"
+            app:enterAnim="@anim/from_bottom_right"
+            app:exitAnim="@anim/to_top_left"
+            app:popEnterAnim="@anim/from_bottom"
+            app:popExitAnim="@anim/to_top" />
+        <action
+            android:id="@+id/action_homeNotes_to_updateNotes"
+            app:destination="@id/updateNotesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNotesFragment"
+        android:name="com.example.completenotes.fragments.updatenotes.UpdateNotesFragment"
+        android:label="Update"
+        tools:layout="@layout/fragment_update_notes" >
+        <argument
+            android:name="currentNote"
+            app:argType="com.example.completenotes.notes.Notes" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNotesFragment"
+        android:name="com.example.completenotes.fragments.addnotes.AddNotesFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add_notes" />
+</navigation>
