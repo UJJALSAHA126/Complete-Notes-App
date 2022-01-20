@@ -52,6 +52,7 @@ class HomeNotesFragment : Fragment(), SearchView.OnQueryTextListener, ItemClicke
 
         // Handle Add Button Click
         val addButton = view.addButtonFAB
+
         addButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeNotes_to_addNotes)
         }
@@ -59,6 +60,7 @@ class HomeNotesFragment : Fragment(), SearchView.OnQueryTextListener, ItemClicke
         requireActivity().onBackPressedDispatcher.addCallback {
             requireActivity().finish()
         }
+
 
         // Add Menu
         setHasOptionsMenu(true)
